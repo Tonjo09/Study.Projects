@@ -10,17 +10,15 @@ int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
 
 int sophiaSum = 0;
 
-
 decimal sophiaScore;
 
-
-sophiaSum = sophia1 + sophia2 + sophia3 + sophia4 + sophia5;
-andrewSum = andrew1 + andrew2 + andrew3 + andrew4 + andrew5;
-emmaSum = emma1 + emma2 + emma3 + emma4 + emma5;
-loganSum = logan1 + logan2 + logan3 + logan4 + logan5;
+foreach (int score in sophiaScores)
+{
+    // add exam score to the sum
+    sophiaSum += score;
+}
 
 sophiaScore = (decimal)sophiaSum / currentAssignments;
-
 
 Console.WriteLine("Student\t\tGrade\n");
 Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
