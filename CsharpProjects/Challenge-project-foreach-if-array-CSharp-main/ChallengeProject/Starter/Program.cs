@@ -66,8 +66,8 @@ foreach (string name in studentNames)
     int gradedExtraCreditAssignments = 0;
 
 
-    decimal sumExamScores = 0;
-    decimal sumExtraCreditScores = 0;
+    int sumExamScores = 0;
+    int sumExtraCreditScores = 0;
 
     decimal currentStudentGrade = 0;
     decimal currentStudentExamScore = 0;
@@ -99,13 +99,13 @@ foreach (string name in studentNames)
     }
 
     //Calculate exam score
-    currentStudentExamScore = sumExamScores / examAssignments;
+    currentStudentExamScore = (decimal)sumExamScores / examAssignments;
 
     //Calculate extra score
-    currentStudentExtraCreditScore = sumExtraCreditScores / gradedExtraCreditAssignments;
+    currentStudentExtraCreditScore = (decimal)sumExtraCreditScores / gradedExtraCreditAssignments;
 
     //Add the extra credit to the total exam score
-    currentStudentGrade = (sumExamScores + (sumExtraCreditScores / 10)) / examAssignments;
+    currentStudentGrade = (sumExamScores + ((decimal)sumExtraCreditScores / 10)) / examAssignments;
 
 
     if (currentStudentGrade >= 97)
