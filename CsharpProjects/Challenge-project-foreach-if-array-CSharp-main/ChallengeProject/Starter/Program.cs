@@ -104,7 +104,7 @@ foreach (string name in studentNames)
     //Calculate extra score
     currentStudentExtraCreditScore = (decimal)sumExtraCreditScores / gradedExtraCreditAssignments;
 
-    //Add the extra credit to the total exam score
+    //Add 10% of the extra credit score to the total exam score and divide by number of exams
     currentStudentGrade = (sumExamScores + ((decimal)sumExtraCreditScores / 10)) / examAssignments;
 
 
