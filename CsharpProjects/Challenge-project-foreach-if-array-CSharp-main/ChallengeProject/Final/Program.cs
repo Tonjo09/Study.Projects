@@ -90,7 +90,7 @@ foreach (string name in studentNames)
 
     currentStudentExamScore = (decimal)(sumExamScores) / examAssignments;
     currentStudentExtraCreditScore = (decimal)(sumExtraCreditScores) / gradedExtraCreditAssignments;
-    // async
+
     currentStudentGrade = (decimal)((decimal)sumExamScores + ((decimal)sumExtraCreditScores / 10)) / examAssignments;
 
     if (currentStudentGrade >= 97)
