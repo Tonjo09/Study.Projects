@@ -98,6 +98,7 @@ foreach (string name in studentNames)
 
     }
 
+
     //Calculate exam score
     currentStudentExamScore = (decimal)sumExamScores / examAssignments;
 
