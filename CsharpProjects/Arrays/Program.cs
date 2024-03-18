@@ -40,10 +40,12 @@ Console.WriteLine($"We have {sum} items in inventory.");
 
 */
 
-
-string[] fraudulentOrderIDs = {"B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"}; 
-foreach (string order in fraudulentOrderIDs) {
-    if (order.StartsWith("B")) {
+//Array containing IDS and looping to check IDs starting with B
+string[] fraudulentOrderIDs = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" };
+foreach (string order in fraudulentOrderIDs)
+{
+    if (order.StartsWith("B"))
+    {
         Console.WriteLine($"This {order} starts with B");
     }
 }
