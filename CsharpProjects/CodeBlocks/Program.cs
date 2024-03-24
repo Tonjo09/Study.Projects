@@ -1,4 +1,4 @@
-﻿int[] numbers = { 4, 8, 15, 16, 23, 42 };
+﻿int[] numbers = { 4, 8, 15, 16, 23, 15, 16, 42 };
 int total = 0;
 bool found = false;
 
