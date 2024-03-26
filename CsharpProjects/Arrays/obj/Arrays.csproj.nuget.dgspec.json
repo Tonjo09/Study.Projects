@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ttony\\Projects\\Study.Projects\\CsharpProjects\\Arrays\\Arrays.csproj": {}
+    "C:\\Users\\135400tong\\Documents\\Projects\\CsharpProjects\\Arrays\\Arrays.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ttony\\Projects\\Study.Projects\\CsharpProjects\\Arrays\\Arrays.csproj": {
+    "C:\\Users\\135400tong\\Documents\\Projects\\CsharpProjects\\Arrays\\Arrays.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ttony\\Projects\\Study.Projects\\CsharpProjects\\Arrays\\Arrays.csproj",
+        "projectUniqueName": "C:\\Users\\135400tong\\Documents\\Projects\\CsharpProjects\\Arrays\\Arrays.csproj",
         "projectName": "Arrays",
-        "projectPath": "C:\\Users\\ttony\\Projects\\Study.Projects\\CsharpProjects\\Arrays\\Arrays.csproj",
-        "packagesPath": "C:\\Users\\ttony\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ttony\\Projects\\Study.Projects\\CsharpProjects\\Arrays\\obj\\",
+        "projectPath": "C:\\Users\\135400tong\\Documents\\Projects\\CsharpProjects\\Arrays\\Arrays.csproj",
+        "packagesPath": "C:\\Users\\135400tong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\135400tong\\Documents\\Projects\\CsharpProjects\\Arrays\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ttony\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\135400tong\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
