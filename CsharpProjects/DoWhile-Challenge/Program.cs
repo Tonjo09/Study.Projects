@@ -10,7 +10,6 @@ do
     monsterHP -= heroAttack;
     Console.WriteLine($"Monster was damaged and lost {heroAttack} health and now has {monsterHP} health.");
 
-
     if (monsterHP <= 0) continue;
 
     int monsterAttack = attack.Next(1, 11);
