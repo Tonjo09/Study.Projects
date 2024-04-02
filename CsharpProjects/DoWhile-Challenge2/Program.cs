@@ -1,18 +1,15 @@
 ﻿string? readResult;
 bool validEntry = false;
-Console.WriteLine("Enter a string containing at least three characters:");
+Console.WriteLine("Enter a integer value between 5 and 10");
+
 do
 {
     readResult = Console.ReadLine();
-    if (readResult != null)
+    if
     {
-        if (readResult.Length >= 3)
-        {
-            validEntry = true;
-        }
-        else
-        {
-            Console.WriteLine("Your input is invalid, please try again.");
-        }
+        readResult =
     }
-} while (validEntry == false);
+
+} while ();
+
+Console.WriteLine("Your input has been accepted");
