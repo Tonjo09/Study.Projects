@@ -1,15 +1,30 @@
 ﻿string? readResult;
-bool validEntry = false;
+int numValue = 0;
+bool validNumber = false;
+
+
 Console.WriteLine("Enter a integer value between 5 and 10");
 
 do
 {
     readResult = Console.ReadLine();
-    if
+    validNumber = int.TryParse(readResult, out numValue);
+
+    if (validNumber == true)
     {
-        readResult =
+        if (numValue <= 5 || numValue >= 10)
+        {
+            validNumber = false;
+            Console.WriteLine($"You entered {numValue}. Please enter a number between 5 and 10");
+        }
     }
 
-} while ();
+    else
+    {
+        Console.WriteLine("Sorry, you entered an invalid number, please try again");
+    }
 
-Console.WriteLine("Your input has been accepted");
+} while (validNumber == false);
+
+Console.WriteLine($"Your input ({numValue}) has been accepted");
+
