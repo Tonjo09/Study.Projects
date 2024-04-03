@@ -21,6 +21,3 @@ do
 
 Console.WriteLine(heroHP > monsterHP ? "Hero wins!" : "Monster wins!");
 
-
-
-
