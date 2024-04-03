@@ -13,10 +13,10 @@ for (int i = 0; i < myStrings.Length; i++)
     while (periodLocation != -1)
     {
 
-        // first sentence is left for the first period location
+        // sentence is left for the first period location
         mySentence = myString.Remove(periodLocation);
 
-        // takes remainder to right after period
+        // extract remainder to right after period
         myString = myString.Substring(periodLocation + 1);
 
         // remove leading white-space from myString
@@ -28,6 +28,6 @@ for (int i = 0; i < myStrings.Length; i++)
         Console.WriteLine(mySentence);
     }
 
-    mySentence = myString.Trim();
+    mySentence = myString;
     Console.WriteLine(mySentence);
 }
