@@ -1,4 +1,4 @@
-﻿int employeeLevel = 100;
+﻿int employeeLevel = 101;
 string employeeName = "John Smith";
 
 string title = "";
