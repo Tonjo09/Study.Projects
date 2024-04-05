@@ -81,7 +81,7 @@ do
 {
     // display the top-level menu options
 
-    Console.Clear();
+    //Console.Clear();
 
     Console.WriteLine("Welcome to the Contoso PetFriends app. Your main menu options are:");
     Console.WriteLine(" 1. List all of our current pet information");
@@ -111,7 +111,18 @@ do
     {
         case "1":
             // List all of our current pet information
-            Console.WriteLine("this app feature is coming soon - please check back to see progress");
+            for (int i = 0; i < maxPets; i++)
+            {
+                if (ourAnimals[i, 0] != "ID #: ")
+                {
+                    Console.WriteLine();
+                    for (int j = 0; j < 6; j++)
+                    {
+                        Console.WriteLine(ourAnimals[i, j]);
+                    }
+                }
+            }
+
             Console.WriteLine("Pre the Enter key to continue.");
             readResult = Console.ReadLine();
             break;
@@ -130,7 +141,7 @@ do
             readResult = Console.ReadLine();
             break;
 
-        case "4:":
+        case "4":
             Console.WriteLine("Challenge Project - please check back soon to see progress.");
             Console.WriteLine("Press the Enter key to continue.");
             readResult = Console.ReadLine();
