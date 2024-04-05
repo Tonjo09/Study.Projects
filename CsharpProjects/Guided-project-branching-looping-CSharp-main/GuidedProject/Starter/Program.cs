@@ -129,7 +129,17 @@ do
 
         case "2":
             // Add a new animal friend to the ourAnimals array
-            Console.WriteLine("this app feature is coming soon - please check back to see progress");
+            string anotherPet = "y";
+            int petCount = 0;
+
+            for (int i = 0; i < maxPets; i++)
+            {
+                if (ourAnimals[i, 0] != "ID#: ")
+                {
+
+                }
+            }
+
             Console.WriteLine("Pre the Enter key to continue.");
             readResult = Console.ReadLine();
             break;
