@@ -168,6 +168,7 @@ do
 
             // build the animal the ID number - for example C1, C2, D3 (for Cat 1, Cat 2, Dog 3)
             animalID = animalSpecies.Substring(0, 1) + (petCount + 1).ToString();
+
             // get the pet's age. can be ? at initial entry. 
             do
             {
@@ -209,6 +210,23 @@ do
                     } while (anotherPet != "y" && anotherPet != "n");
                 }
             }
+
+            // get a description of the pet's physical appearance/condition - animalPhysicalDescription can be blank.
+            do
+            {
+                Console.WriteLine("Enter a physical description of the pet (size, color, gender, weight, housebroken)");
+                readResult = Console.ReadLine();
+                if (readResult != null)
+                {
+                    animalPhysicalDescription = readResult.ToLower();
+                }
+
+                if (animalPhysicalDescription == "")
+                {
+                    animalPhysicalDescription = "tbd";
+                }
+            } while (animalPhysicalDescription == "");
+
 
             if (petCount >= maxPets)
             {
