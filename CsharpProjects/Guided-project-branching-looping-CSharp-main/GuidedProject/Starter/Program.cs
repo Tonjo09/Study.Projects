@@ -6,7 +6,6 @@ string animalPhysicalDescription = "";
 string animalPersonalityDescription = "";
 string animalNickname = "";
 
-
 // variables that support data entry
 int maxPets = 8;
 string? readResult;
@@ -132,13 +131,13 @@ do
             // Add a new animal friend to the ourAnimals array
             string anotherPet = "y";
             int petCount = 0;
-
             for (int i = 0; i < maxPets; i++)
             {
                 if (ourAnimals[i, 0] != "ID #: ")
                 {
                     petCount += 1;
                 }
+
             }
 
             if (petCount < maxPets)
@@ -157,7 +156,7 @@ do
                     animalSpecies = readResult.ToLower();
                     if (animalSpecies != "dog" && animalSpecies != "cat")
                     {
-                        //Console.WriteLine($"You entered: {animalSpecies}.);
+                        //Console.WriteLine($"You entered: {animalSpecies}.");
                         validEntry = false;
                     }
                     else
@@ -170,7 +169,7 @@ do
             // build the animal the ID number - for example C1, C2, D3 (for Cat 1, Cat 2, Dog 3)
             animalID = animalSpecies.Substring(0, 1) + (petCount + 1).ToString();
 
-            // get the pet's age. can be ? at initial entry. 
+            // get the pet's age. can be ? at initial entry.
             do
             {
                 int petAge;
@@ -220,7 +219,6 @@ do
                 }
             } while (animalPersonalityDescription == "");
 
-
             // get the pet's nickname. animalNickname can be blank.
             do
             {
@@ -247,12 +245,12 @@ do
             while (anotherPet == "y" && petCount < maxPets)
             {
                 // increment petCount (the array is zero-based, so we increment the counter after adding to the array)
-                petCount += 1;
+                petCount = petCount + 1;
 
                 // check maxPet limit
                 if (petCount < maxPets)
                 {
-                    // another pet? 
+                    // another pet?
                     Console.WriteLine("Do you want to enter info for another pet (y/n)");
                     do
                     {
@@ -268,11 +266,10 @@ do
 
             if (petCount >= maxPets)
             {
-                Console.WriteLine("We have reached our limit on the number of pets that we can manage");
-                Console.WriteLine("Press the Enter key to continue");
+                Console.WriteLine("We have reached our limit on the number of pets that we can manage.");
+                Console.WriteLine("Press the Enter key to continue.");
                 readResult = Console.ReadLine();
             }
-
             break;
 
         case "3":

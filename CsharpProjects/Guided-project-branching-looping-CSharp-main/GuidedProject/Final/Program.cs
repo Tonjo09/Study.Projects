@@ -144,7 +144,7 @@ do
             while (anotherPet == "y" && petCount < maxPets)
             {
                 bool validEntry = false;
-                
+
                 // get species (cat or dog) - string animalSpecies is a required field 
                 do
                 {
@@ -297,7 +297,7 @@ do
             Console.WriteLine("Press the Enter key to continue.");
             readResult = Console.ReadLine();
             break;
-        
+
         case "7":
             // Display all cats with a specified characteristic
             Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
