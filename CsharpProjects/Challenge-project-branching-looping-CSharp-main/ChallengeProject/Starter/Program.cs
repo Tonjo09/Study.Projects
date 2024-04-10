@@ -286,7 +286,27 @@ do
             break;
 
         case "3":
+
             // Ensure animal ages and physical descriptions are complete
+            //
+            //    ourAnimals[i, 2] = "Age: " + animalAge;
+            //    ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
+
+            for (int i = 0; i < maxPets; i++)
+            {
+                if (ourAnimals[i, 2] == "Age: ?" && ourAnimals[i, 0] != "ID #: ")
+                {
+                    do
+                    {
+                        Console.WriteLine($"Enter an age for ID #: {ourAnimals[i, 0]}");
+                    }
+
+                    while ()
+                }
+
+            }
+
+
             Console.WriteLine("Challenge Project - please check back soon to see progress.");
             Console.WriteLine("Press the Enter key to continue.");
             readResult = Console.ReadLine();
@@ -312,7 +332,7 @@ do
             Console.WriteLine("Press the Enter key to continue.");
             readResult = Console.ReadLine();
             break;
-        
+
         case "7":
             // Display all cats with a specified characteristic
             Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
