@@ -298,7 +298,7 @@ do
                 {
                     do
                     {
-                        Console.WriteLine($"Enter an age for ID #: {ourAnimals[i, 0]}");
+                        Console.WriteLine($"Enter an age for {ourAnimals[i, 0]}");
                         readResult = Console.ReadLine();
 
                         if (readResult != null)
@@ -310,75 +310,86 @@ do
                     ourAnimals[i, 2] = "Age: " + animalAge.ToString();
                 }
 
-                if (ourAnimals[i, 4] = "Physical description: " && ourAnimals[i, 0] != "ID #: ")
+                if (ourAnimals[i, 4] == "Physical description: " && ourAnimals[i, 0] != "ID #: ")
                 {
                     do
                     {
-                        Console.WriteLine($"Enter a physical description for ID#: {ourAnimals[i, 0]} (size, color, breed, gender, weight, housebroken)");
+                        Console.WriteLine($"Enter a physical description for {ourAnimals[i, 0]} (size, color, breed, gender, weight, housebroken)");
                         readResult = Console.ReadLine();
                         if (readResult != null)
                         {
                             animalPhysicalDescription = readResult.ToLower();
                             if (animalPhysicalDescription == "")
                             {
-                                validEntry = false
+                                validEntry = false;
                             }
                             else
                             {
                                 validEntry = true;
                             }
                         }
-
-                    } while (validEntry == false)
-
+                    } while (validEntry == false);
+                    ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
                 }
             }
 
-    }
+            Console.WriteLine("\n\rAge and physical description fields are complete for all of our friends. \n\rPress the Enter key to continue");
+            readResult = Console.ReadLine();
 
-
-    Console.WriteLine("Challenge Project - please check back soon to see progress.");
-    Console.WriteLine("Press the Enter key to continue.");
-    readResult = Console.ReadLine();
-    break;
+            break;
 
         case "4":
-        // Ensure animal nicknames and personality descriptions are complete
-        Console.WriteLine("Challenge Project - please check back soon to see progress.");
-        Console.WriteLine("Press the Enter key to continue.");
-        readResult = Console.ReadLine();
-        break;
+            // Ensure animal nickname and personality descriptions are complete
+            //
+            //    ourAnimals[i, 3] = "Nickname: " + animalNickname;
+            //    ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
 
-    case "5":
-        // Edit an animal’s age");
-        Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
-        Console.WriteLine("Press the Enter key to continue.");
-        readResult = Console.ReadLine();
-        break;
+            for (int i = 0; i < maxPets; i++)
+            {
+                do
+                {
+                    if (ourAnimals[i, 3] == "Personality: " && ourAnimals[i, 0] != "#ID: ")
+                    {
+                        Console.WriteLine("Enter a nickname for {ourAnimals[i,0]}")
+                    }
 
-    case "6":
-        // Edit an animal’s personality description");
-        Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
-        Console.WriteLine("Press the Enter key to continue.");
-        readResult = Console.ReadLine();
-        break;
+                } while ();
 
-    case "7":
-        // Display all cats with a specified characteristic
-        Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
-        Console.WriteLine("Press the Enter key to continue.");
-        readResult = Console.ReadLine();
-        break;
 
-    case "8":
-        // Display all dogs with a specified characteristic
-        Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
-        Console.WriteLine("Press the Enter key to continue.");
-        readResult = Console.ReadLine();
-        break;
+            }
 
-    default:
-        break;
+            break;
+
+        case "5":
+            // Edit an animal’s age");
+            Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
+            Console.WriteLine("Press the Enter key to continue.");
+            readResult = Console.ReadLine();
+            break;
+
+        case "6":
+            // Edit an animal’s personality description");
+            Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
+            Console.WriteLine("Press the Enter key to continue.");
+            readResult = Console.ReadLine();
+            break;
+
+        case "7":
+            // Display all cats with a specified characteristic
+            Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
+            Console.WriteLine("Press the Enter key to continue.");
+            readResult = Console.ReadLine();
+            break;
+
+        case "8":
+            // Display all dogs with a specified characteristic
+            Console.WriteLine("UNDER CONSTRUCTION - please check back next month to see progress.");
+            Console.WriteLine("Press the Enter key to continue.");
+            readResult = Console.ReadLine();
+            break;
+
+        default:
+            break;
     }
 
 } while (menuSelection != "exit");
