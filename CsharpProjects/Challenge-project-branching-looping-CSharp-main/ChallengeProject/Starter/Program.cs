@@ -314,10 +314,22 @@ do
                 {
                     do
                     {
-                        Console.WriteLine("Enter a physical description for ID #: c4 (size, color, breed, gender, weight, housebroken)");
-                    }
+                        Console.WriteLine($"Enter a physical description for ID#: {ourAnimals[i, 0]} (size, color, breed, gender, weight, housebroken)");
+                        readResult = Console.ReadLine();
+                        if (readResult != null)
+                        {
+                            animalPhysicalDescription = readResult.ToLower();
+                            if (animalPhysicalDescription == "")
+                            {
+                                validEntry = false
+                            }
+                            else
+                            {
+                                validEntry = true;
+                            }
+                        }
 
-
+                    } while (validEntry == false)
 
                 }
             }
