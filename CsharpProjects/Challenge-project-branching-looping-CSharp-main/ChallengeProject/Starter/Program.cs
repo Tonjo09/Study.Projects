@@ -346,15 +346,26 @@ do
 
             for (int i = 0; i < maxPets; i++)
             {
-                do
+                if (ourAnimals[i, 3] == "Personality: " && ourAnimals[i, 0] != "#ID: ")
                 {
-                    if (ourAnimals[i, 3] == "Personality: " && ourAnimals[i, 0] != "#ID: ")
+                    do
                     {
-                        Console.WriteLine("Enter a nickname for {ourAnimals[i,0]}")
-                    }
-
-                } while ();
-
+                        Console.WriteLine($"Enter a nickname for {ourAnimals[i, 0]}");
+                        readResult = Console.WriteLine();
+                        if (readResult != null)
+                        {
+                            animalNickname = readResult.ToLower;
+                            if (animalNickname == "")
+                            {
+                                validEntry = false;
+                            }
+                            else
+                            {
+                                validEntry = true;
+                            }
+                        }
+                    } while (validEntry == false);
+                }
 
             }
 
