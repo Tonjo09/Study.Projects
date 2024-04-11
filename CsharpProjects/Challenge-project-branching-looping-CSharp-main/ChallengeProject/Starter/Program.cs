@@ -346,7 +346,7 @@ do
 
             for (int i = 0; i < maxPets; i++)
             {
-                if (ourAnimals[i, 3] == "Personality: " && ourAnimals[i, 0] != "#ID: ")
+                if (ourAnimals[i, 3] == "Nickname: " && ourAnimals[i, 0] != "#ID: ")
                 {
                     do
                     {
@@ -365,8 +365,21 @@ do
                             }
                         }
                     } while (validEntry == false);
+
+                    ourAnimals[i, 3] = "Nickname: " + animalNickname;
+
                 }
 
+
+                if (ourAnimals[i, 5] == "Personality: " && ourAnimals[i, 0] != "#ID: ")
+                {
+                    do
+                    {
+                        Console.WriteLine($"Enter a personality description for {ourAnimals[i, 0]} (likes or dislikes, tricks, energy level)")
+                        readResult = console.WriteLine();
+
+                    } while (validEntry == false);
+                }
             }
 
             break;
