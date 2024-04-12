@@ -1,5 +1,5 @@
-﻿string value = "102";
-int result = 0;
+﻿string value = "bad";
+int result = 1;
 if (int.TryParse(value, out result))
 {
     Console.WriteLine($"Measurement: {result}");
@@ -8,4 +8,6 @@ else
 {
     Console.WriteLine("Unable to report the measurement.");
 }
-Console.WriteLine($"Measurement (w/ offset): {50 + result}");
+
+if (result > 0)
+    Console.WriteLine($"Measurement (w/ offset): {50 + result}");
