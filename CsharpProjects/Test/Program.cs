@@ -15,7 +15,7 @@ if (result > 0)
      */
 
 
-//Review a solution for combining string array values as strings and as integer challenge
+//Review a solution for combining string array values as strings and as integers challenge
 /*
 string[] values = { "12,3", "45", "ABC", "11", "DEF" };
 
